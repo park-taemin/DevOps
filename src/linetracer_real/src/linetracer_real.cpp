@@ -11,8 +11,8 @@
 class LineTrackerProcessor : public rclcpp::Node {
 public:
     LineTrackerProcessor() : Node("line_tracker_node"), mode_(false), k_(0.15), base_vel_(100) {
-        this->declare_parameter("k", 0.15);
-        this->declare_parameter("base_vel", 50);
+        this->declare_parameter("k", 0.11);
+        this->declare_parameter("base_vel", 100);
             
         k_ = this->get_parameter("k").as_double();
         base_vel_ = this->get_parameter("base_vel").as_int();
