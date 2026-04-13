@@ -193,6 +193,8 @@ int main(int argc, char * argv[]) {
     return 0;
 }
 ```
-[camera view] (https://studio.youtube.com/video/JcjDFo5NSPc/edit)
-[driving view] {https://studio.youtube.com/video/mO01pdLnhD8/edit)
+[camera view] (https://youtu.be/JcjDFo5NSPc)
+
+[driving view] {https://youtu.be/mO01pdLnhD8)
+
 [human view] (https://github.com/user-attachments/assets/d6ca01c1-8030-4c27-9bcc-79c06c35d625)
