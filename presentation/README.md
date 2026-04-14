@@ -329,6 +329,25 @@ if (cx < 250) {
 
 탐지된 장애물에 바운딩 박스와 화살표를 표시하고 목표 방향을 시각화한다.
 
+void LineDetector::draw_result(cv::Mat& result, ..., int left_idx, int right_idx) {
+
+    // 탐지된 장애물에 바운딩 박스와 중심점 표시
+    cv::rectangle(result, cv::Rect(left, top, width, height), color, 2);
+    cv::circle(result, cv::Point(x, y), 3, color, -1);
+
+    // 좌측 장애물 → 초록 화살표 (로봇 → 바운딩 박스 우하단)
+    cv::Point l_box_bottom_right(left + width, top + height);
+    cv::arrowedLine(result, robot_pos, l_box_bottom_right, cv::Scalar(0,255,0), 1);
+
+    // 우측 장애물 → 빨간 화살표 (로봇 → 바운딩 박스 좌하단)
+    cv::Point r_box_bottom_left(left, top + height);
+    cv::arrowedLine(result, robot_pos, r_box_bottom_left, cv::Scalar(0,0,255), 1);
+
+    // 목표 방향 → 파란 화살표 (로봇 → 좌/우 무게중심 중간점)
+    int target_x = (tmp_pt_l.x + tmp_pt_r.x) / 2;
+    cv::arrowedLine(result, robot_pos, cv::Point(target_x, 100), cv::Scalar(255,0,0), 1);
+}
+
 | 색상 | 대상 | 화살표 목표 |
 |------|------|------------|
 | 초록 | 좌측 장애물 | 바운딩 박스 우하단 꼭짓점 |
