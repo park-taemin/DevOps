@@ -126,9 +126,7 @@ video_writer.write(image);
 | `r` | 우회전 | +50 rpm | +50 rpm |
 | `s` / `space` | 정지 | 0 | 0 |
 
-### 실행 결과
 
-> 영상 링크 추가 예정
 
 ---
 
@@ -234,9 +232,7 @@ vel.y = -(50 + k * error) (오른쪽 바퀴)
 
 - 게인 `k = 1.5` / `s` 키: 주행 시작 / `q` 키: 정지
 
-### 실행 결과
 
-> 영상 링크 추가 예정
 
 ---
 
@@ -365,4 +361,8 @@ if (error == 0 || error < -60 || error > 60) {
 
 ### 실행 결과
 
-> Terminal Video, Robot View, Human View 영상 링크 추가 예정
+[camera view] (https://youtu.be/JcjDFo5NSPc)
+
+[driving view] {https://youtu.be/mO01pdLnhD8)
+
+[human view] (https://github.com/user-attachments/assets/d6ca01c1-8030-4c27-9bcc-79c06c35d625)
