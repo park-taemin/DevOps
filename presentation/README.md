@@ -242,7 +242,8 @@ vel.y = -(50 + k * error) (오른쪽 바퀴)
 
 ### Block Diagram
 
-![block_diagram3](https://github.com/user-attachments/assets/15bededf-2538-43bc-8b1b-f9aa99e7b41f)
+![lidardrive3](https://github.com/user-attachments/assets/90b54aba-5fdc-4c52-8e59-120f49063d75)
+
 
 
 
